@@ -1,0 +1,128 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.content{
+    position: fixed;
+    align-items: center;
+    width: 600px;
+  }
+
+.p {
+    margin-bottom: 2.5rem;   
+  }
+
+.progressbar{
+    margin: 4.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+.progressbar::before {
+    content : "";
+    position: absolute;
+    background-color: #e0e0e0;
+    transform: translateY(-50%);
+    border-radius: 1px;
+    height: 3px;
+    width: 100%;
+    z-index: -1;
+    transition: 0.4s ease;
+  }
+
+.progress {
+    position: absolute;
+    background-color: #664de5;
+    border-radius: 5px;
+    height: 4px;
+    width: 50%;
+    z-index: -1;
+    transition: 0.4s ease;
+  }
+
+.circle {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    color: #00000;
+    border-radius: 45%;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #999;
+  }
+
+  .lab {
+    position: fixed;
+    margin-left: -160px;
+  }
+
+  .dialog{
+    max-width: 150px;
+    background-color: #fff;
+    margin:0 20px;
+    border-radius: 10px;
+    border-color: #e0e0e0;
+  }
+
+  .dia {
+    font-size: 16px;
+    margin: 2rem;
+  }
+
+  .dia:lastvisited {
+    font-size: 16px;
+    margin: 2rem;
+    border: 1px solid #664de5
+  }
+
+.circle.active {
+    color: #fff;
+    background-color: #664de5; 
+  }
+
+.input {
+    position: relative;
+    margin: 0.6rem 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    height: 50px;
+    border-radius: 5px;
+    width: 300px;
+  }
+
+.btn {
+    color: #fff;
+    border: 1px solid #664de5;
+    background-color: #664de5;
+    position: relative;
+    font-size: 14px;
+    margin-top: 1.2rem;
+    line-height: 19px;
+    height: 50px;
+    border-radius: 5px;
+    width: 320px;
+}
+
+.textfi {
+  background-color: #e0e0e0;
+}
+
+.input[type="text"]{
+  padding-left: 15px;
+
+}
+
+.input[type="url"]{
+  padding-left: 15px;
+
+}
