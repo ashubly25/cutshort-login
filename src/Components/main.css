@@ -126,3 +126,19 @@
   padding-left: 15px;
 
 }
+.activate{
+  max-width: 150px;
+  background-color: #fff;
+  margin:0 20px;
+  border-radius: 10px;
+  border-color: #e0e0e0;
+}
+
+.nonactivate {
+  color: #664de5;
+  max-width: 150px;
+  background-color: #fff;
+  margin:0 20px;
+  border-radius: 10px;
+  border: 1px solid #664de5;
+}
